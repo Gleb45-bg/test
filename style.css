@@ -1,0 +1,164 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+a,p, h1, h2, h3, h4, h5, h6{
+    color: inherit;
+    text-decoration: none;
+    font-family: Roboto;
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(246, 255, 0, 1);
+    border-radius: 0px 0px 35px 35px;
+}
+.header-a a:hover{
+    text-decoration: underline;
+}
+button{
+    background: inherit;
+    border: none;
+}
+.header-a a{
+    margin-right: 25px;
+    color: rgba(71, 71, 71, 1);
+}
+.sum{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.home{
+    background-image: url(./img/building-2762236.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.home-main h1{
+    color: rgba(246, 255, 0, 1);
+    font-size: 7vw;
+    font-weight: 300;
+}
+.home-main h3{
+    color: rgba(246, 255, 0, 1);
+    font-size: 5vw;
+    font-weight: 300;
+}
+.home-main{
+    margin-left: 7vw;
+    margin-top: 18vh;
+}
+.burger{
+    display: none;
+}
+
+.About-us-img-group{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.About-us-img-group img{
+    height:18.5vw;
+}
+.About-us{
+   display: flex;
+   background-color: rgba(71, 71, 71, 1);
+   min-height: 100vh;
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+}
+.about-us-main-content{
+    display: flex;
+    gap: 60px;
+}
+.about-us-text h1{
+    color: rgba(246, 255, 0, 1);
+    font-size: 4vw;
+    font-weight: 300;
+}
+.about-us-text p{
+    color: rgba(246, 255, 0, 1);
+    font-size: 2vw;
+    font-weight: 300;
+}
+@media(max-width:870px){
+    .header-a{
+        display: none;
+    }
+    .sum{
+        gap: 15px;
+    }
+    .burger{
+        display: inline;
+    }
+    .home-main h1{
+        font-size: 10vw;
+    }
+    .home-main{
+    
+
+    }
+    .home-main h3{
+        font-size: 8vw;
+    }
+    .About-us-img-group{
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+    }
+    .about-us-text{
+        text-align: center;
+        width: auto;
+        margin: 0px 40px;
+    }
+    .about-us-text p{
+       flex-wrap: wrap;
+    }
+    .about-us-main-content{
+        flex-direction: column;
+        
+        
+    }
+    .br1{
+        display: none;
+    }
+    .About-us-img-group img{
+        height: 21.5vw;
+    }
+}
+@media(max-width:680px){
+    .About-us-img-group{
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        margin: 0px 15px;
+    }
+    .About-us-img-group img{
+        height: 50vw;
+    }
+    .about-us-text{
+        margin: 0px 20px;
+    }
+    .about-us-text h1{
+        font-size: 6vw;
+    }
+    .about-us-text p{
+        font-size:4vw;
+    }
+    .About-us{
+        padding-top: 30px;
+        min-height: 60vh;
+        height: 50vh;
+    }
+    .home{
+        height: 50vh;
+    }
+
+}
